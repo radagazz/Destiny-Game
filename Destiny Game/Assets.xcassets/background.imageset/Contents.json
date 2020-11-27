@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "3d-grunge-background-with-dark-wooden-table.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
