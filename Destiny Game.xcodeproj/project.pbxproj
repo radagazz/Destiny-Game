@@ -56,15 +56,39 @@
 		8B78382425705ABA001149A0 /* Destiny Game */ = {
 			isa = PBXGroup;
 			children = (
+				8BAEAE2D2570EFCD00D0FCB1 /* Model */,
+				8BAEAE2C2570EFC700D0FCB1 /* View */,
+				8BAEAE2B2570EFB700D0FCB1 /* Controller */,
 				8B78382525705ABA001149A0 /* AppDelegate.swift */,
 				8B78382725705ABA001149A0 /* SceneDelegate.swift */,
-				8B78382925705ABA001149A0 /* ViewController.swift */,
-				8B78382B25705ABA001149A0 /* Main.storyboard */,
 				8B78382E25705ABC001149A0 /* Assets.xcassets */,
 				8B78383025705ABC001149A0 /* LaunchScreen.storyboard */,
 				8B78383325705ABC001149A0 /* Info.plist */,
 			);
 			path = "Destiny Game";
+			sourceTree = "<group>";
+		};
+		8BAEAE2B2570EFB700D0FCB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B78382925705ABA001149A0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8BAEAE2C2570EFC700D0FCB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B78382B25705ABA001149A0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BAEAE2D2570EFCD00D0FCB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
