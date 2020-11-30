@@ -28,9 +28,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="MbI-oi-7HU">
                                 <rect key="frame" x="10" y="618" width="394" height="224"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-Hi-dH4">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-Hi-dH4">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
-                                        <color key="backgroundColor" red="0.2734244764" green="0.44958889480000003" blue="0.82375311849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="QJL-sX-OEk"/>
                                         </constraints>
@@ -43,10 +43,13 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vln-r9-P3t"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAw-1S-FsG">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAw-1S-FsG">
                                         <rect key="frame" x="0.0" y="124" width="394" height="100"/>
-                                        <color key="backgroundColor" red="0.10781801489999999" green="0.26238328220000001" blue="0.28235721590000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.50081896780000001" green="0.3787046671" blue="0.68729490039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="QCu-XH-CZI"/>
                                         </constraints>
@@ -59,6 +62,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rzw-XX-ZDX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -79,6 +85,11 @@
                             <constraint firstItem="AZ0-mw-xxE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="pP8-x9-mx5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstButton" destination="JDb-Hi-dH4" id="drL-hs-Um0"/>
+                        <outlet property="secondButton" destination="lAw-1S-FsG" id="M51-9S-sBD"/>
+                        <outlet property="storyLabel" destination="5Ua-yl-jPh" id="k9E-bE-Bo1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
